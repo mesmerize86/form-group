@@ -1,12 +1,19 @@
 {
   "name": "form-group",
   "version": "1.0.0",
-  "description": "",
+  "description": "form types",
   "main": "index.js",
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mesmerize86/form-group.git"
+  },
+  "author": "Kishor Maharjan",
   "license": "ISC",
-  "devDependencies": {
-  }
+  "bugs": {
+    "url": "https://github.com/mesmerize86/form-group/issues"
+  },
+  "homepage": "https://github.com/mesmerize86/form-group#readme"
 }
