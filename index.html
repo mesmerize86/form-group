@@ -8,15 +8,28 @@
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-  <div class="wrapper">    
+  <div class="wrapper"> 
+    <h1>Overlap Animation</h1>   
     <div class="form">
-      <div class=" form-group--overlap form-group js-form-group--overlap">
-        <label class="form-label">Username</label>
+      <div class="form-group form-group--overlap js-form-group--overlap">
+        <label class="form-label form-labelOverlap">Username</label>
         <input type="text" class="form-control"/>
       </div>
       <div class="form-group form-group--overlap js-form-group--overlap">
-        <label class="form-label">password</label>
+        <label class="form-label form-labelOverlap">password</label>
         <input type="password" class="form-control"/>
+      </div>
+    </div>
+    <br/><br/>
+    <h1>With Background Animation</h1>
+    <div class="form">
+      <div class="form-group form-group--background js-form-group--background">
+        <label class="form-label form-labelBackground">Username</label>
+        <input type="text" class="form-control form-controlBackground"/>
+      </div>
+      <div class="form-group form-group--background js-form-group--background">
+        <label class="form-label form-labelBackground">password</label>
+        <input type="password" class="form-control form-controlBackground"/>
       </div>
     </div>
   </div>
@@ -24,6 +37,7 @@
   <script src="script.js"></script>
   <script>
     $('.js-form-group--overlap').textFieldEffects();
+    $('.js-form-group--background').textFieldEffects();
   </script>
 </body>
 </html>
