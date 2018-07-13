@@ -1,0 +1,61 @@
+.wrapper {
+  width: 30%;
+  margin: 0px auto;
+  overflow: hidden;
+}
+
+.form {
+  margin-top: 40px;
+  display: block;
+}
+
+.form-group {
+  position: relative;
+  margin: 10px 0px;
+}
+
+input:active,
+input:hover,
+input:focus {
+  outline: none;
+  border: none;
+}
+
+.form-label {
+  display: block;
+  width: 100%;
+
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  border: 1px solid #ccc;
+  height: 34px;
+  padding: 5px;
+  font-size: 14px;
+}
+
+/* overlap animated styling */
+.form-group--overlap {
+  margin-bottom: 15px;
+}
+
+.form-group--overlap .form-label {
+  position: absolute;
+  pointer-events: none;
+  top: 10px;
+  
+  transform: translate3d(0, 0, 0) scale(1);
+  transform-origin: left top;
+  transition: transform 0.3s;
+}
+
+.form-group--overlap .form-control {
+  border: none;
+  border-bottom: 1px solid #ccc;
+}
+
+.isFocused .form-label {
+  transform: translate3d(0px, -25px, 0) scale(0.75);
+}
