@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Portfolio Gallery</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <div class="container">
+    <div class="gallery">
+      <ul class="gallery-nav">
+        <li><a href="#" class="gallery-nav-link">All</a></li>
+        <li><a href="#" class="gallery-nav-link" data-filter="animation">Animation</a></li>
+        <li><a href="#" class="gallery-nav-link" data-filter="photography">Photography</a></li>
+        <li><a href="#" class="gallery-nav-link" data-filter="webdesign">Web Design</a></li>
+      </ul>
+      <div class="gallery-container">
+        <div class="gallery-thumbnail" data-category="animation, photography" >
+          <div class="gallery-content">content </div>
+          <img src="http://via.placeholder.com/250x151&text=animationphotography" class="img-responsive" />
+        </div>
+        <div class="gallery-thumbnail"  data-category="photography">
+          <div class="gallery-content">content </div>
+          <img src="http://via.placeholder.com/250x151&text=photography" class="img-responsive" />
+        </div>
+        <div class="gallery-thumbnail" data-category="photography" >
+          <div class="gallery-content">content </div>
+          <img src="http://via.placeholder.com/250x151&text=photography" class="img-responsive" />
+        </div>
+        <div class="gallery-thumbnail" data-category="animation" >
+          <div class="gallery-content">content </div>
+          <img src="http://via.placeholder.com/250x151&text=animation" class="img-responsive"/>
+        </div>
+        <div class="gallery-thumbnail" data-category="webdesign" >
+          <div class="gallery-content">content </div>
+          <img src="http://via.placeholder.com/250x151&text=web-design" class="img-responsive"/>
+        </div>
+        <div class="gallery-thumbnail" data-category="webdesign" >
+          <div class="gallery-content">content </div>
+          <img src="http://via.placeholder.com/250x151&text=web-design" class="img-responsive"/>
+        </div>
+        <div class="gallery-thumbnail" data-category="animation" >
+          <div class="gallery-content">content </div>
+          <img src="http://via.placeholder.com/250x151&text=animation" class="img-responsive"/>
+        </div>
+        <div class="gallery-thumbnail" data-category="photography" >
+          <div class="gallery-content">content </div>
+          <img src="http://via.placeholder.com/250x151&text=photography" class="img-responsive"/>
+        </div>
+        <div class="gallery-thumbnail" data-category="animation" >
+          <div class="gallery-content">content </div>
+          <img src="http://via.placeholder.com/250x151&text=animation" class="img-responsive"/>
+        </div>
+        <div class="gallery-thumbnail" data-category="photography" >
+          <div class="gallery-content">content </div>
+          <img src="http://via.placeholder.com/250x151&text=photography" class="img-responsive"/>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="script.js"></script>
+  <script>
+    $('.gallery').filterGallery();
+  </script>
+</body>
+</html>
