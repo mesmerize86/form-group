@@ -1,15 +1,21 @@
 (function($){
 
-  $.fn.filterGallery = function(){
+  $.fn.filterGallery = function(options){
+    var defaultOptions = {
+      animationDuration: 800
+    }
+    
+    options = $.extend({}, defaultOptions, options);
+    
      var gallery = function(e){
        var $this = $(this);
        var filterContent = $('.gallery-thumbnail');
        if($this.attr('data-filter')){
-         filterContent.hide(800, function(){
+         filterContent.hide(options.animationDuration, function(){
            $(this).filter('[data-category=' + $this.attr('data-filter')+']').show();
          });
        }else{
-         filterContent.show(800);
+         filterContent.show(options.animationDuration);
        }
      }
     return this.each(function(){
